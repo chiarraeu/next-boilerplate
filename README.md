@@ -40,7 +40,7 @@ With shadcn/ui [Beautifully designed components that you can copy and paste into
 Generate UI [v0](https://v0.dev/https://v0.dev/)
 
 ## Show more
-- [Project](https://github.com/users/ekovegeance/projects/8)
+- [Project](https://github.com/users/chiarraeu/projects/next-boilerplate)
 - [Discussions](https://github.com/ekovegeance/Fullstack-Nextjs-Templates/discussions/5)
 
 
