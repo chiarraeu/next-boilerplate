@@ -5,10 +5,10 @@
 First, run the development server:
 
 ```bash
-npx create-vngne-boilerplate@latest
+git clone https://github.com/chiarraeu/next-boilerplate.git
 ```
 ```bash
-cd your-project-name
+cd next-boilerplate 
 ```
 ```bash
 npm run dev
