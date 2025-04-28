@@ -1,5 +1,7 @@
 ![img](https://github.com/ekovegeance/next-boilerplate/blob/main/next-boilerplate.png)
 
+[![Node.js CI](https://github.com/chiarraeu/next-boilerplate/actions/workflows/node.js.yml/badge.svg)](https://github.com/chiarraeu/next-boilerplate/actions/workflows/node.js.yml)
+
 ## Getting Started
 
 First, run the development server:
