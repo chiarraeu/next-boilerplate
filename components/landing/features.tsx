@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ClipboardCheck, ShieldCheck, UserRoundCog } from "lucide-react";
+import { ClipboardCheck, Container, ShieldCheck, UserRoundCog } from "lucide-react";
 
 const features = [
   {
@@ -26,12 +26,18 @@ const features = [
     description:
       "Handle users and manage content with complete features for adding, editing, and deleting data efficiently.",
   },
+  {
+    icon: <Container className="h-10 w-10" />,
+    title: "PostgreSQL Database",
+    description:
+      "PostgreSQL database integration in container for robust data storage and management, ensuring reliability and performance.",
+  },
 ];
 
 export default function Features() {
   return (
     <section className="container py-12 md:py-24 lg:py-32">
-      <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+      <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-2 lg:max-w-none lg:grid-cols-4">
         {features.map((feature, index) => (
           <Card key={index}>
             <CardHeader>

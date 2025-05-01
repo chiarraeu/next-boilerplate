@@ -11,16 +11,16 @@ export default function Footer() {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             Built by{" "}
             <Link
-              href="https://github.com/ekovegeance"
+              href="https://github.com/chiarraeu"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              ekovegeance
+              Devnexus
             </Link>
             . The source code is available on{" "}
             <Link
-              href="https://github.com/ekovegeance/next-boilerplate"
+              href="https://github.com/chiarraeu/next-boilerplate"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
