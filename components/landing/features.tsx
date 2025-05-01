@@ -44,7 +44,7 @@ export default function Features() {
               <div className="p-2 bg-primary-foreground rounded-full w-fit">
                 {feature.icon}
               </div>
-              <CardTitle className="mt-4">{feature.title}</CardTitle>
+              <CardTitle className="mt-4 bg-gradient-to-r from-blue-600 to-violet-900 bg-clip-text text-transparent">{feature.title}</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription>{feature.description}</CardDescription>
