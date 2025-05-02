@@ -1,14 +1,45 @@
 services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: next_boilerplate_nextjs
+    restart: always
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/next_boilerplate
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - .:/app
+  
   postgres:
     image: postgres:16
+    container_name: next_boilerplate_db
+    restart: always
     ports:
-      - 5432:5432
+      - "5432:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: next_boilerplate
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8"
     volumes:
       - next_boilerplate-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
 volumes:
   next_boilerplate-postgres-data:
+    driver: local
